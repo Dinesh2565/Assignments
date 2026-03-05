@@ -45,16 +45,16 @@ function isPrime(n) {
 // prime(100)
 
 function factorial(n) {
-    let i = 0;
+    let i = 1;
+    let res = 1;
     while (i <= n) {
-        if (n % i == 0) {
-            console.log(i)
-        }
+        res *= i;
         i++;
     }
+    return res;
 }
 
-// factorial(68)
+console.log(factorial(5));
 function sumOfDigits(n) {
     let sum = 0;
     let i = 0
